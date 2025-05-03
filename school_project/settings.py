@@ -26,14 +26,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'users',
-    'teachers',
-    'news',
-    'contact',
-    'classes',
-    'content',
-    'home',
-    'auth',
+    'apps.users',
+    'apps.teachers',
+    'apps.news',
+    'apps.contact',
+    'apps.classes',
+    'apps.content',
+    'apps.home',
 ]
 
 MIDDLEWARE = [
@@ -128,3 +127,5 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 MEDIA_URL = '/media/'
 # مسیر ذخیره‌سازی واقعی فایل‌های رسانه‌ای روی سرور
 MEDIA_ROOT = BASE_DIR / "media"
+
+AUTH_USER_MODEL = 'users.User'
