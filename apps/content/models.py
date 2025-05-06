@@ -17,6 +17,7 @@ class Slider(models.Model):
 class Banner(models.Model):
     image = models.ImageField(upload_to='banners/')
     title = models.CharField(max_length=255)
+    description = models.TextField(blank=True, null=True)
     link = models.URLField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

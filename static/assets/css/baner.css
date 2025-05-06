@@ -1,0 +1,26 @@
+a {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    touch-action: none;
+}
+
+.cover-container {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+/* جلوگیری از زوم با gesture روی موبایل */
+@media (pointer:coarse) {
+    body {
+        touch-action: pan-x pan-y;
+    }
+}

@@ -33,6 +33,8 @@ INSTALLED_APPS = [
     'apps.classes',
     'apps.content',
     'apps.home',
+
+    'django_jalali',
 ]
 
 MIDDLEWARE = [
